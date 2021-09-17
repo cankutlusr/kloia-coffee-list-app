@@ -1,4 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledItemHeader = styled.h2`
+const StyledItemHeader = styled.h2`
 `
+
+export default StyledItemHeader;

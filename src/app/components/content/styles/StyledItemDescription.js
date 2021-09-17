@@ -1,4 +1,5 @@
 import styled from 'styled-components';
 
-export const StyledItemDescription = styled.div`
+const StyledItemDescription = styled.div`
 `
+export default StyledItemDescription;

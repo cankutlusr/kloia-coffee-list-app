@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledItemContainer = styled.div`
-
+const StyledItemContainer = styled.div`
 `
+
+export default StyledItemContainer;

@@ -1,4 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledItemIngredients = styled.div`
+const StyledItemIngredients = styled.div`
 `
+
+export default StyledItemIngredients;
