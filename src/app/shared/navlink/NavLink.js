@@ -1,5 +1,5 @@
 import { StyledNavLink } from "./styles";
 
-const NavLink = ({children, ...props}) => <StyledNavLink {...props}>{children}</StyledNavLink>
+const NavLink = ({label, ...props}) => <StyledNavLink {...props}>{label}</StyledNavLink>
 
 export default NavLink;
