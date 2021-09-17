@@ -1,3 +1,5 @@
+import {CATEGORY} from '../app/types/define';
+
 const coffeesDB = {
     coffees: [
         {
@@ -182,5 +184,12 @@ const coffeesDB = {
         "category": "iced", 
         "id": 26
         }
+    ],
+    categories: [
+        CATEGORY.ALL,
+        CATEGORY.HOT,
+        CATEGORY.ICED,
     ]
 }
+
+export default coffeesDB;
