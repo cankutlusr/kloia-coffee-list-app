@@ -1,5 +1,5 @@
 
-import PageLayout from "../../shared-components/page-layout";
+import PageLayout from "../../shared/page-layout/index";
 import Sidebar from "../../components/sidebar"
 import Content from "../../components/content"
 
