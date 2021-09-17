@@ -1,5 +1,5 @@
 import { StyledInput } from "./styles";
 
-const Input = ({children, ...rest}) => <StyledInput {...rest}>{children}</StyledInput>
+const Input = ({...props}) => <StyledInput {...props}></StyledInput>
 
 export default Input;
