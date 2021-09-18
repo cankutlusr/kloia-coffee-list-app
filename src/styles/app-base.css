@@ -1,0 +1,17 @@
+
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+      url("../assets/fonts/roboto-regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Exo";
+    src: local("Exo"),
+      url("../assets/fonts/exo-bold.woff2") format("woff2");
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Roboto';
+  }
