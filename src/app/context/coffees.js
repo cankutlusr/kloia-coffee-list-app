@@ -4,10 +4,10 @@ const CoffeesContext = React.createContext()
 
 export const CoffeesProvider = ({children}) => {
     const [coffees] = useState(db.coffees)
-    console.log(db.coffees);
+    const [filteredCoffees,setFilteredCoffees] = useState([])
+    const [filteredSearchCoffees,setFilteredSearchCoffees] = useState([])
     const [categories] = useState(db.categories)
-    console.log(db.categories);
-    const values = {coffees,categories}
+    const values = {coffees,categories,filteredCoffees,setFilteredCoffees,filteredSearchCoffees,setFilteredSearchCoffees}
     return <CoffeesContext.Provider value={values}>{children}</CoffeesContext.Provider>
 }
 
