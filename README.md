@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Cumhur Can Kutlu -- kloia Case
+
+## Introduction
+
+It is a coffee search and filtering application. It was developed using knowledge reinforced with kloia React Bootcamp.
+
+## Screenshots
+
+![Desktop Screenshot](./screenshots/desktop1.png)
+![Desktop Search Screenshot](./screenshots/desktopSearch.png)
+![Responsive Screenshot](./screenshots/responsive.png)
+![Not Found Screenshot](./screenshots/notFound.png)
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
