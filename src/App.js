@@ -1,7 +1,7 @@
 import Coffees from './app/page/coffee-list';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {CoffeesProvider} from './app/context/coffees'
-
+import './styles/app-base.css';
 const App = () => {
   return (
     <CoffeesProvider>
