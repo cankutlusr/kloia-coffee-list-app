@@ -5,7 +5,7 @@ import StyledSidebar from "./styles/index";
 import {useCoffees} from '../../context/coffees' 
 
 const Sidebar = ({...props}) => {
-    const {categories,filteredCoffees,setFilteredCoffees,filteredSearchCoffees,setFilteredSearchCoffees} = useCoffees();
+    const {categories,filteredCoffees,setFilteredCoffees,filteredSearchCoffees,setFilteredSearchCoffees,activeCategoryName} = useCoffees();
 
     useEffect(() => {
         setFilteredSearchCoffees(filteredCoffees);
@@ -25,7 +25,7 @@ const Sidebar = ({...props}) => {
             {
                 <>
                     <Search placeholder="Search" onChange={e => handleSearch(e.target.value)}/>
-                    <Menu items={categories}/>
+                    <Menu items={categories} activeCategoryName={activeCategoryName}/>
                 </>
             }
         </StyledSidebar>

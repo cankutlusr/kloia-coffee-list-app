@@ -6,7 +6,7 @@ const Menu = ({items, ...props}) => {
     const history = useHistory();
     return (
         <StyledMenu {...props}>
-            {items?.map((item, index) => (<NavLink key={index} activeClassName="selected" onClick={() => history.push('/c/' + item.toLowerCase())} label={item} />))}
+            {items?.map((item, index) => (<NavLink key={index} active={item.toLowerCase() === props.activeCategoryName} onClick={() => history.push('/c/' + item.toLowerCase())} label={item} />))}
         </StyledMenu>
     )
 }
