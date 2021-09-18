@@ -5,16 +5,18 @@ import Content from "../../components/content"
 import {useCoffees} from '../../context/coffees' 
 
 const Coffees = (props) => {
-    const {coffees,filteredCoffees,setFilteredCoffees,filteredSearchCoffees,setFilteredSearchCoffees} = useCoffees();
+    const {coffees,filteredCoffees,setFilteredCoffees,filteredSearchCoffees,setFilteredSearchCoffees,setActiveCategoryName} = useCoffees();
     useEffect(() => {
         if(props.match.params.category && props.match.params.category !== "all coffees"){
             const filtered = filteredCoffees.filter(coffee => coffee.category === props.match.params.category)
             setFilteredCoffees(filtered)
             setFilteredSearchCoffees(filtered);
+            setActiveCategoryName(props.match.params.category)
         }
         else{
             setFilteredCoffees(coffees)
             setFilteredSearchCoffees(coffees);
+            setActiveCategoryName('all coffees');
         }
     },[])
 
@@ -23,10 +25,12 @@ const Coffees = (props) => {
             const filtered = coffees.filter(coffee => coffee.category === props.match.params.category)
             setFilteredCoffees(filtered)
             setFilteredSearchCoffees(filtered);
+            setActiveCategoryName(props.match.params.category)
         }
         else{
             setFilteredSearchCoffees(coffees);
-            setFilteredCoffees(coffees)
+            setFilteredCoffees(coffees);
+            setActiveCategoryName('all coffees');
         }
     },[props.match.params.category])
 

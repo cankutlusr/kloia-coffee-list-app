@@ -7,7 +7,8 @@ export const CoffeesProvider = ({children}) => {
     const [filteredCoffees,setFilteredCoffees] = useState([])
     const [filteredSearchCoffees,setFilteredSearchCoffees] = useState([])
     const [categories] = useState(db.categories)
-    const values = {coffees,categories,filteredCoffees,setFilteredCoffees,filteredSearchCoffees,setFilteredSearchCoffees}
+    const [activeCategoryName,setActiveCategoryName] = useState('')
+    const values = {coffees,categories,filteredCoffees,setFilteredCoffees,filteredSearchCoffees,setFilteredSearchCoffees,activeCategoryName,setActiveCategoryName}
     return <CoffeesContext.Provider value={values}>{children}</CoffeesContext.Provider>
 }
 
