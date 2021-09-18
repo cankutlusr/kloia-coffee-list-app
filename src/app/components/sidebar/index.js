@@ -13,7 +13,14 @@ const Sidebar = ({...props}) => {
 
     const handleSearch = (text) => {
         if(text?.length > 0){
-            const filtered = filteredCoffees.filter(coffee => coffee.title.toLowerCase().includes(text.toLowerCase()))
+            const filtered = filteredCoffees.filter(coffee => {
+                return (
+                    coffee.title.toLowerCase().includes(text.toLowerCase()) ||
+                    coffee.description.toLowerCase().includes(text.toLowerCase()) || 
+                    coffee.ingredients.some((ingredient) => ingredient.toLowerCase().includes(text.toLowerCase()))
+                );
+              });
+
             setFilteredCoffees(filtered)
         }
         else if(text?.length === 0){

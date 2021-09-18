@@ -4,6 +4,12 @@
 
 It is a coffee search and filtering application. It was developed using knowledge reinforced with kloia React Bootcamp.
 
+### Toolstack
+
+React
+React Context API
+React Router
+
 ## Screenshots
 
 ### Desktop Screenshots
